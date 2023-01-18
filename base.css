@@ -1,0 +1,347 @@
+/* FONTS */
+/* Fantasque Sans Mono (https://github.com/belluzj/fantasque-sans) */
+@font-face {
+  font-family: 'Fantasque Sans Mono';
+  src: url('./fonts/FantasqueSansMono-Regular.woff2') format('woff2'),
+       url('./fonts/FantasqueSansMono-Regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+       url('./fonts/FantasqueSansMono-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/FantasqueSansMono-Regular.svg#FantasqueSansMono-Regular') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fantasque Sans Mono';
+  src: url('./fonts/FantasqueSansMono-Italic.woff2') format('woff2'),
+       url('./fonts/FantasqueSansMono-Italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+       url('./fonts/FantasqueSansMono-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/FantasqueSansMono-Italic.svg#FantasqueSansMono-Italic') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Fantasque Sans Mono';
+  src: url('./fonts/FantasqueSansMono-BoldItalic.woff2') format('woff2'),
+       url('./fonts/FantasqueSansMono-BoldItalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+       url('./fonts/FantasqueSansMono-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/FantasqueSansMono-BoldItalic.svg#FantasqueSansMono-BoldItalic') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Fantasque Sans Mono';
+  src: url('./fonts/FantasqueSansMono-Bold.woff2') format('woff2'),
+       url('./fonts/FantasqueSansMono-Bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+       url('./fonts/FantasqueSansMono-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/FantasqueSansMono-Bold.svg#FantasqueSansMono-Bold') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* DEFINING COLOURS */
+/* colours sourced from 'Gruvbox Dark' (https://github.com/morhetz/gruvbox) */
+:root {
+  --fg0: #fbf1c7;
+  --fg: #ebdbb2;
+  --fg2: #d5c4a1;
+  --fg3: #bdae93;
+  --fg4: #a89984;
+  --bg_h: #1d2021;
+  --bg_s: #1e90ff;
+  --bg: #282828;
+  --bg1: #3c3836;
+  --bg2: #504945;
+  --bg3: #665c54;
+  --bg4: #7c6f64;
+  --red: #cc241d;
+  --red2: #fb4934;
+  --green: #98971a;
+  --green2: #b8bb26;
+  --yellow: #d79921;
+  --yellow2: #fabd2f;
+  --blue: #458588;
+  --blue2: #83a598;
+  --purple: #b16286;
+  --purple2: #d3869b;
+  --aqua: #689d6a;
+  --aqua2: #8ec07c;
+  --gray: #a89984;
+  --gray2: #928374;
+  --orange: #d65d0e;
+  --orange2: #fe8019;
+}
+
+/* LINK COLOURS */
+a:link {
+  color: var(--aqua);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: var(--aqua);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--aqua2);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: var(--aqua2);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+/* HTML TAGGING */
+body {
+  background-color: var(--bg);
+  font-family: Fantasque Sans Mono;
+  font-size: 40px;
+  line-height: 150%;
+  color: var(--fg);
+  align-content: center;
+}
+
+/* this tag handles the attributes of each "window" on screen */
+.box {
+  background-color: var(--bg1);
+  margin: 10px auto;
+  border: 5px solid var(--orange);
+  border-radius: 15px;
+  box-shadow: 2px 2px var(--orange2), 4px 4px var(--fg), 8px 8px var(--fg0);
+  text-align: center;
+  justify-content: center;
+}
+
+.title {
+  width: 50%;
+  margin: 20px 5%;
+  padding: 10px;
+}
+
+.back {
+  width: 15%;
+  margin: 20px 0px;
+  padding: 10px;
+}
+
+.spacer {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+}
+
+.page {
+  width: 32%;
+  height: inherit;
+  display: inline-block;
+}
+
+.halfsies {
+  width: 45%;
+  height: inherit;
+  display: inline-block;
+}
+
+.full {
+  width: 100%;
+  height: inherit;
+  display: block;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.main {
+  width: 65%;
+  height: inherit;
+  display: inline-block;
+}
+
+.side {
+  width: 30%;
+  height: inherit;
+  display: inline-block;
+}
+
+.album {
+  height: 200px;
+  aspect-ratio: 1 / 1;
+  display: inline-block;
+}
+
+.albumdesc {
+  width: 75%;
+  height: inherit;
+  display: inline-block;
+}
+
+.footer {
+  width: 90%;
+  margin: 20px auto
+}
+
+/* EFFECTS */
+
+/* retro CRT effect (scanlines, jitter, colour separation)*/
+@keyframes flicker {
+  0% {
+    opacity: 0.27861;
+  }
+  5% {
+    opacity: 0.34769;
+  }
+  10% {
+    opacity: 0.23604;
+  }
+  15% {
+    opacity: 0.90626;
+  }
+  20% {
+    opacity: 0.18128;
+  }
+  25% {
+    opacity: 0.83891;
+  }
+  30% {
+    opacity: 0.65583;
+  }
+  35% {
+    opacity: 0.67807;
+  }
+  40% {
+    opacity: 0.26559;
+  }
+  45% {
+    opacity: 0.84693;
+  }
+  50% {
+    opacity: 0.96019;
+  }
+  55% {
+    opacity: 0.08594;
+  }
+  60% {
+    opacity: 0.20313;
+  }
+  65% {
+    opacity: 0.71988;
+  }
+  70% {
+    opacity: 0.53455;
+  }
+  75% {
+    opacity: 0.37288;
+  }
+  80% {
+    opacity: 0.71428;
+  }
+  85% {
+    opacity: 0.70419;
+  }
+  90% {
+    opacity: 0.7003;
+  }
+  95% {
+    opacity: 0.36108;
+  }
+  100% {
+    opacity: 0.24387;
+  }
+}
+@keyframes textShadow {
+  0% {
+    text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  5% {
+    text-shadow: 2.7928974010788217px 0 1px rgba(0,30,255,0.5), -2.7928974010788217px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  10% {
+    text-shadow: 0.02956275843481219px 0 1px rgba(0,30,255,0.5), -0.02956275843481219px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  15% {
+    text-shadow: 0.40218538552878136px 0 1px rgba(0,30,255,0.5), -0.40218538552878136px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  20% {
+    text-shadow: 3.4794037899852017px 0 1px rgba(0,30,255,0.5), -3.4794037899852017px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  25% {
+    text-shadow: 1.6125630401149584px 0 1px rgba(0,30,255,0.5), -1.6125630401149584px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  30% {
+    text-shadow: 0.7015590085143956px 0 1px rgba(0,30,255,0.5), -0.7015590085143956px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  35% {
+    text-shadow: 3.896914047650351px 0 1px rgba(0,30,255,0.5), -3.896914047650351px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  40% {
+    text-shadow: 3.870905614848819px 0 1px rgba(0,30,255,0.5), -3.870905614848819px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  45% {
+    text-shadow: 2.231056963361899px 0 1px rgba(0,30,255,0.5), -2.231056963361899px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  50% {
+    text-shadow: 0.08084290417898504px 0 1px rgba(0,30,255,0.5), -0.08084290417898504px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  55% {
+    text-shadow: 2.3758461067427543px 0 1px rgba(0,30,255,0.5), -2.3758461067427543px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  60% {
+    text-shadow: 2.202193051050636px 0 1px rgba(0,30,255,0.5), -2.202193051050636px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  65% {
+    text-shadow: 2.8638780614874975px 0 1px rgba(0,30,255,0.5), -2.8638780614874975px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  70% {
+    text-shadow: 0.48874025155497314px 0 1px rgba(0,30,255,0.5), -0.48874025155497314px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  75% {
+    text-shadow: 1.8948491305757957px 0 1px rgba(0,30,255,0.5), -1.8948491305757957px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  80% {
+    text-shadow: 0.0833037308038857px 0 1px rgba(0,30,255,0.5), -0.0833037308038857px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  85% {
+    text-shadow: 0.09769827255241735px 0 1px rgba(0,30,255,0.5), -0.09769827255241735px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  90% {
+    text-shadow: 3.443339761481782px 0 1px rgba(0,30,255,0.5), -3.443339761481782px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  95% {
+    text-shadow: 2.1841838852799786px 0 1px rgba(0,30,255,0.5), -2.1841838852799786px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  100% {
+    text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+}
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+.crt {
+  animation: textShadow 1.6s infinite;
+}
