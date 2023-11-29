@@ -1,4 +1,6 @@
 # my website!
+THIS REPOSITORY HAS BEEN DEPRECATED, I AM REBUILDING MY SITE FROM SCRATCH
+
 currently hosted at: https://jalipeno.xyz
 previously available at: https://jalipeno.windows97.space
 
